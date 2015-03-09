@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "../statisticsview/statisticswidget.h"
+#include <statisticsview/statisticswidget.h>
 #include "examplestatistics.h"
 
 int main(int argc, char *argv[])

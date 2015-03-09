@@ -1,8 +1,8 @@
 #include <QStandardItemModel>
 
-#include "statisticswidget.h"
+#include <statisticsview/statisticswidget.h>
+#include <statisticsview/statistic.h>
 #include "ui_statistic.h"
-#include "statistic.h"
 
 namespace statistics
 {

@@ -15,16 +15,26 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = statisticsclient
 TEMPLATE = app
-DESTDIR = ../bin
+
+debug
+{
+    DESTDIR = ../bin/release
+}
+release
+{
+    DESTDIR = ../bin/debug
+}
+
+INCLUDEPATH += ../include
 
 SOURCES += main.cpp\
-    examplestatistics.cpp
+examplestatistics.cpp
 
 HEADERS  += \
-    examplestatistics.h
+examplestatistics.h
 
 FORMS    += mainwindow.ui
 
-win32:CONFIG(release, debug|release): LIBS += -L../bin -lstatisticsview
-else:win32:CONFIG(debug, debug|release): LIBS += -L../bin -lstatisticsviewd
+win32:CONFIG(release, debug|release): LIBS += -L../bin/release -lstatisticsview
+else:win32:CONFIG(debug, debug|release): LIBS += -L../bin/debug -lstatisticsviewd
 else:unix: LIBS += -Lbin -lstatisticsviewd

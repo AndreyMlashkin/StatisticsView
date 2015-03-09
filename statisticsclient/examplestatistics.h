@@ -1,7 +1,7 @@
 #ifndef EXAMPLESTATISTICS_H
 #define EXAMPLESTATISTICS_H
 
-#include "../statisticsview/statistic.h"
+#include <statisticsview/statistic.h>
 
 class ExampleStatistics : public statistics::Statistic
 {

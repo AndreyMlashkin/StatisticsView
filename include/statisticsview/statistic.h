@@ -10,7 +10,7 @@ namespace statistics
 class STATISTICSVIEWSHARED_EXPORT Statistic
 {
 public:
-    Statistic();
+    Statistic() {}
     virtual ~Statistic() {}
 
     virtual QString name() const = 0;

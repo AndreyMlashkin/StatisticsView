@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+tmp
+/statisticsview/Makefile.Debug
+*.Release
+Makefile.Debug
+*.user
