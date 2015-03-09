@@ -11,7 +11,7 @@ UI_DIR = ./tmp/ui
 MOC_DIR = ./tmp/moc
 RCC_DIR = ./tmp/rcc
 
-DESTDIR = ./bin
+DESTDIR = ../bin
 
 TARGET = statisticsview
 TEMPLATE = lib
